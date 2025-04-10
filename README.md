@@ -1,2 +1,2 @@
-# nurselp.github.io
-看護師転職ランディングページ用
+# digilinkstrategy.github.io
+コーポレート＋各事業ページ
