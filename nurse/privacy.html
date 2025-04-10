@@ -16,11 +16,13 @@
   <p>法令に基づく場合を除き、本人の同意なく第三者に提供することはありません。</p>
   <h2>4. Cookieの使用について</h2>
   <p>本サイトではアクセス解析のためにCookieを使用する場合があります。</p>
-  <footer style="margin-top: 2rem; text-align: center;">
-    <a href="index.html">TOP</a> |
-    <a href="terms.html">利用規約</a> |
-    <a href="privacy.html">プライバシーポリシー</a> |
-    <a href="about.html">運営会社</a>
-  </footer>
+  <div id="footer-area"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("footer-area").innerHTML = html;
+      });
+  </script>
 </body>
 </html>
