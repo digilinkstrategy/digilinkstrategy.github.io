@@ -87,10 +87,25 @@ th {
 }
 
 /* 特徴列などで2行に収めて省略表示 */
-.compare-table td {
+.truncate-2lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4em;
+  max-height: 2.8em;
   white-space: normal;
-  word-break: break-word;
-  line-height: 1.4;
-  font-size: 0.85em;
-  max-width: 200px;
+}
+.compare-table th:nth-child(3),
+.compare-table td:nth-child(3) {
+  min-width: 110px;
+}
+.compare-table th:nth-child(4),
+.compare-table td:nth-child(4) {
+  min-width: 130px;
+}
+.compare-table th:nth-child(6),
+.compare-table td:nth-child(6) {
+  min-width: 140px;
 }
