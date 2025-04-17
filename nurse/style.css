@@ -67,3 +67,33 @@ th {
   font-weight: bold;
   color: #0d47a1;
 }
+
+/* 表全体を横スクロール可能に */
+.compare-table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* ロゴ画像を見やすく拡大 */
+.compare-table img {
+  height: 40px;
+  max-width: 100px;
+  object-fit: contain;
+}
+
+/* 表のテキストを小さめに */
+.compare-table td, .compare-table th {
+  font-size: 13px;
+}
+
+/* 特徴列などで2行に収めて省略表示 */
+.truncate-2lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4em;
+  max-height: 2.8em;
+  white-space: normal;
+}
