@@ -2,19 +2,61 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>デジリンクストラテジー | デジタルマーケティング支援</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Digi-link Strategy｜マーケティング支援</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+    header, section, footer { padding: 40px 20px; max-width: 800px; margin: auto; }
+    header { background: #f0f8ff; text-align: center; }
+    header img { height: 60px; margin-bottom: 10px; }
+    h1 { margin: 0; font-size: 2em; }
+    nav a { margin: 0 10px; text-decoration: none; color: #333; }
+    section h2 { border-bottom: 1px solid #ccc; padding-bottom: 0.5em; }
+    footer { text-align: center; font-size: 0.9em; color: #888; }
+    a { color: #1a73e8; }
+  </style>
 </head>
 <body>
-  <h1>デジリンクストラテジー</h1>
-  <p>私たちは、成果にこだわるデジタルマーケティング支援会社です。</p>
-  <div id="footer-area"></div>
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("footer-area").innerHTML = html;
-      });
-  </script>
+
+<header>
+  <img src="logo.png" alt="Digi-link Strategy ロゴ">
+  <h1>Digi-link Strategy</h1>
+  <p>Webマーケティング × SEO × 広告運用の実行支援</p>
+  <nav>
+    <a href="#profile">代表紹介</a>
+    <a href="#services">サービス</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+</header>
+
+<section id="profile">
+  <h2>代表プロフィール</h2>
+  <p>古谷 卓磨｜Webマーケター・コンサルタント。バンド活動を経て、デジタル分野へ。SEO戦略・広告運用・サイト構築に強みを持ち、実務と戦略の両面から企業や個人事業主を支援。</p>
+</section>
+
+<section id="services">
+  <h2>提供サービス</h2>
+  <ul>
+    <li>SEO対策（内部設計・被リンク・コンテンツ改善）</li>
+    <li>Google広告・SNS広告の戦略設計と運用</li>
+    <li>Webサイト・LPの構成支援／CV改善</li>
+    <li>アクセス解析（GA4, Search Console等）</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>お問い合わせ</h2>
+  <p>ご依頼やご相談は以下の方法でお気軽にご連絡ください。</p>
+  <ul>
+    <li>📧 メール: <a href="mailto:digilinkstrategy+furutani@gmail.com">digilinkstrategy+furutani@gmail.com</a></li>
+    <li>X（旧Twitter）: <a href="https://x.com/youraccount" target="_blank">@youraccount</a></li>
+    <li>Webサイト: <a href="https://digilinkstrategy.com" target="_blank">https://digilinkstrategy.com</a></li>
+  </ul>
+</section>
+
+<footer>
+  &copy; 2025 Digi-link Strategy
+</footer>
+
 </body>
 </html>
